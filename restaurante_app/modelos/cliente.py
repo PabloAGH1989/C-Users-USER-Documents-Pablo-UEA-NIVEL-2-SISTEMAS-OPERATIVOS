@@ -1,14 +1,15 @@
 class Cliente:
-    def __init__(self, nome, email, telefone):
-        self.nome = nome
+    def __init__(self, nombre, email, telefono):
+        self.nombre = nombre
         self.email = email
-        self.telefone = telefone
+        self.telefono = telefono
+        self.pedidos = []
 
-    def mostrar_informacao(self):
-        print(f"Nome: {self.nome}")
+    def mostrar_informacion(self):
+        print(f"Nombre: {self.nombre}")
         print(f"Email: {self.email}")
-        print(f"Telefone: {self.telefone}")    
+        print(f"Telefono: {self.telefono}")
+
 
     def __str__(self):
-        return f"Cliente: {self.nome}, Email: {self.email}, Telefone: {self.telefone}"
-    
+        return f"Cliente: {self.nombre}, Email: {self.email}, Telefono: {self.telefono}"
